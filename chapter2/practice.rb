@@ -65,8 +65,3 @@ if day == 1
     point *= 5
 end
 point #>= 35
-    
-else
-    
-end
-end
