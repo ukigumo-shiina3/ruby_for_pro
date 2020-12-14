@@ -47,15 +47,37 @@ data = find_data
 #if文
 country = "italy"
 if country == "japan"
-    puts "こんにちは"
+    "こんにちは"
 elsif country == "us"
-    puts "Hello"
-elsif country = "italy"
-    puts "ciao"
-begin
-    pust "???"
+    "Hello"
+elsif country == "italy"
+    "ciao"
+else
+    "???"
 end
 #>= ciao
+
+#case文
+country = "italy"
+case country
+when "japan"
+    "こんにちは"
+when "us"
+    puts "Hello"
+when "italy"
+    puts "ciao"
+else
+    puts "???"
+end
+
+#case文 then
+country = "italy"
+case country
+when "japan" then "こんにちは"
+when "us" then "Hello"
+when "italy" then "ciao"
+else "???"
+end
 
 #毎月１日だけポイントを５倍にしたい場合
 point = 7
@@ -65,3 +87,4 @@ if day == 1
     point *= 5
 end
 point #>= 35
+
